@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foto Libra — Foto 3x4, Impressão, Plastificação e Encadernação | Tatuapé</title>
+<meta name="description" content="Foto Libra, no Tatuapé: foto 3x4 na hora, revelação e impressão de fotos, impressão de documentos, plastificação e encadernação. Chame no WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#EEEAE0;
+    --paper-light:#FAF8F3;
+    --card:#FFFFFF;
+    --ink:#1B1A17;
+    --ink-soft:#5B584F;
+    --line: rgba(27,26,23,0.16);
+    --red:#C92E1D;
+    --teal:#0E6F6D;
+    --yellow:#E8A711;
+    --wa:#25D366;
+    --wa-dark:#1CB454;
+    --radius: 3px;
+    --font-display: 'Archivo Black', sans-serif;
+    --font-body: 'IBM Plex Sans', sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+    --maxw: 1120px;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
+  }
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:var(--font-body);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  img,svg{display:block; max-width:100%;}
+  a{color:inherit;}
+
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+
+  h1,h2,h3{font-family:var(--font-display); font-weight:400; line-height:1.05; margin:0; letter-spacing:-0.01em;}
+  .eyebrow{
+    font-family:var(--font-mono);
+    font-size:12.5px;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    color:var(--red);
+    display:flex;
+    align-items:center;
+    gap:8px;
+    margin:0 0 14px;
+  }
+  .eyebrow::before{content:"+"; font-size:14px;}
+
+  /* focus visibility */
+  a:focus-visible, button:focus-visible{
+    outline:2px solid var(--teal);
+    outline-offset:3px;
+  }
+
+  /* ---------- registration mark motif ---------- */
+  .reg-frame{position:relative;}
+  .reg-mark{
+    position:absolute;
+    width:16px; height:16px;
+    pointer-events:none;
+  }
+  .reg-mark::before, .reg-mark::after{
+    content:"";
+    position:absolute;
+    background:var(--ink);
+    opacity:0.55;
+  }
+  .reg-mark::before{ width:100%; height:1px; top:50%; left:0; }
+  .reg-mark::after{ width:1px; height:100%; top:0; left:50%; }
+  .reg-mark.tl{top:-8px; left:-8px;}
+  .reg-mark.tr{top:-8px; right:-8px;}
+  .reg-mark.bl{bottom:-8px; left:-8px;}
+  .reg-mark.br{bottom:-8px; right:-8px;}
+
+  /* ---------- header ---------- */
+  header.nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(238,234,224,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 0;
+  }
+  .brand{display:flex; align-items:baseline; gap:9px;}
+  .brand-mark{
+    font-family:var(--font-display);
+    font-size:21px;
+    letter-spacing:-0.01em;
+  }
+  .brand-tag{
+    font-family:var(--font-mono);
+    font-size:11px;
+    color:var(--ink-soft);
+    letter-spacing:0.05em;
+  }
+  .nav-links{
+    display:flex; gap:28px;
+    font-size:14.5px;
+    font-weight:500;
+  }
+  .nav-links a{text-decoration:none; color:var(--ink-soft); transition:color .15s;}
+  .nav-links a:hover{color:var(--ink);}
+  @media (max-width:700px){ .nav-links{display:none;} }
+
+  /* ---------- buttons ---------- */
+  .btn{
+    display:inline-flex; align-items:center; gap:9px;
+    font-family:var(--font-body);
+    font-weight:600;
+    font-size:15px;
+    padding:13px 22px;
+    border-radius:var(--radius);
+    text-decoration:none;
+    border:1px solid transparent;
+    cursor:pointer;
+    transition:transform .12s ease, box-shadow .12s ease, background .15s ease;
+    white-space:nowrap;
+  }
+  .btn:active{transform:translateY(1px);}
+  .btn-wa{
+    background:var(--wa);
+    color:#0B2412;
+  }
+  .btn-wa:hover{background:var(--wa-dark); box-shadow:0 4px 14px rgba(37,211,102,0.35);}
+  .btn-wa svg{width:18px; height:18px;}
+  .btn-ghost{
+    background:transparent;
+    border:1px solid var(--ink);
+    color:var(--ink);
+    padding:12px 21px;
+  }
+  .btn-ghost:hover{background:var(--ink); color:var(--paper-light);}
+  .btn-sm{padding:10px 16px; font-size:13.5px;}
+
+  /* ---------- hero ---------- */
+  .hero{
+    padding:64px 0 76px;
+    border-bottom:1px solid var(--line);
+  }
+  .hero-inner{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:56px;
+    align-items:center;
+  }
+  .hero h1{
+    font-size:clamp(34px, 5vw, 54px);
+    margin-bottom:20px;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:var(--red);
+  }
+  .hero p.lead{
+    font-size:17.5px;
+    color:var(--ink-soft);
+    max-width:46ch;
+    margin:0 0 30px;
+  }
+  .hero-ctas{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:26px;}
+  .hero-meta{
+    font-family:var(--font-mono);
+    font-size:12.5px;
+    color:var(--ink-soft);
+    display:flex; gap:18px; flex-wrap:wrap;
+  }
+  .hero-meta span{display:flex; align-items:center; gap:6px;}
+  .dot{width:6px; height:6px; border-radius:50%; background:var(--teal); display:inline-block;}
+
+  .hero-art{
+    position:relative;
+    padding:26px;
+  }
+  .hero-art svg{width:100%; height:auto;}
+
+  @media (max-width:860px){
+    .hero-inner{grid-template-columns:1fr; gap:40px;}
+    .hero-art{order:-1; max-width:280px; margin:0 auto;}
+  }
+
+  /* ---------- trust strip ---------- */
+  .trust{
+    background:var(--ink);
+    color:var(--paper-light);
+  }
+  .trust-inner{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    padding:22px 0;
+  }
+  .trust-item{
+    display:flex; align-items:center; gap:10px;
+    font-size:13.5px;
+    font-family:var(--font-mono);
+  }
+  .trust-item svg{width:18px; height:18px; flex-shrink:0; color:var(--yellow);}
+  @media (max-width:860px){
+    .trust-inner{grid-template-columns:repeat(2,1fr);}
+  }
+  @media (max-width:480px){
+    .trust-inner{grid-template-columns:1fr;}
+  }
+
+  /* ---------- section heading ---------- */
+  .section{padding:80px 0;}
+  .section-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-end;
+    gap:24px;
+    margin-bottom:44px;
+    border-bottom:1px solid var(--line);
+    padding-bottom:22px;
+  }
+  .section-head h2{font-size:clamp(26px,3.4vw,36px);}
+  .section-head .note{
+    font-family:var(--font-mono);
+    font-size:12.5px;
+    color:var(--ink-soft);
+    max-width:30ch;
+    text-align:right;
+  }
+  @media (max-width:640px){
+    .section-head{flex-direction:column; align-items:flex-start;}
+    .section-head .note{text-align:left;}
+  }
+
+  /* ---------- services ---------- */
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+  }
+  @media (max-width:900px){ .services-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:600px){ .services-grid{grid-template-columns:1fr;} }
+
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:26px 24px 22px;
+    display:flex;
+    flex-direction:column;
+    gap:14px;
+    position:relative;
+  }
+  .card-icon{
+    width:42px; height:42px;
+    display:flex; align-items:center; justify-content:center;
+    border:1px solid var(--ink);
+    border-radius:50%;
+    color:var(--ink);
+  }
+  .card-icon svg{width:22px; height:22px;}
+  .card h3{
+    font-family:var(--font-body);
+    font-weight:700;
+    font-size:17.5px;
+  }
+  .card p{
+    font-size:14.5px;
+    color:var(--ink-soft);
+    margin:0;
+    flex-grow:1;
+  }
+  .card .btn-wa{align-self:flex-start; margin-top:4px;}
+  .card::after{
+    content:attr(data-code);
+    position:absolute;
+    top:16px; right:18px;
+    font-family:var(--font-mono);
+    font-size:11px;
+    color:var(--line);
+    color:rgba(27,26,23,0.28);
+  }
+
+  /* ---------- process ---------- */
+  .process-list{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:0;
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+  }
+  .process-item{
+    padding:30px 26px;
+    border-right:1px solid var(--line);
+    background:var(--card);
+  }
+  .process-item:last-child{border-right:none;}
+  .process-num{
+    font-family:var(--font-mono);
+    font-size:12px;
+    color:var(--red);
+    margin-bottom:14px;
+    display:block;
+  }
+  .process-item h3{
+    font-family:var(--font-body);
+    font-weight:700;
+    font-size:16.5px;
+    margin-bottom:8px;
+  }
+  .process-item p{
+    font-size:14px;
+    color:var(--ink-soft);
+    margin:0;
+  }
+  @media (max-width:760px){
+    .process-list{grid-template-columns:1fr;}
+    .process-item{border-right:none; border-bottom:1px solid var(--line);}
+    .process-item:last-child{border-bottom:none;}
+  }
+
+  /* ---------- location ---------- */
+  .location{background:var(--paper-light); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
+  .location-inner{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:44px;
+    align-items:start;
+  }
+  .location h2{font-size:clamp(26px,3.4vw,36px); margin-bottom:18px;}
+  .loc-line{
+    display:flex; gap:12px;
+    padding:14px 0;
+    border-bottom:1px solid var(--line);
+    font-size:14.5px;
+  }
+  .loc-line:last-of-type{border-bottom:none;}
+  .loc-line svg{width:18px; height:18px; flex-shrink:0; margin-top:2px; color:var(--teal);}
+  .loc-label{font-family:var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:var(--ink-soft); display:block; margin-bottom:3px;}
+  .hours-table{width:100%; border-collapse:collapse; margin-top:6px; font-size:14px;}
+  .hours-table td{padding:5px 0;}
+  .hours-table td:last-child{text-align:right; font-family:var(--font-mono);}
+  .map-frame{
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+    aspect-ratio:4/3.4;
+  }
+  .map-frame iframe{width:100%; height:100%; border:0;}
+  @media (max-width:860px){ .location-inner{grid-template-columns:1fr;} }
+
+  /* ---------- final cta ---------- */
+  .final-cta{
+    padding:90px 0;
+    text-align:center;
+  }
+  .final-cta h2{
+    font-size:clamp(28px,4.4vw,46px);
+    margin-bottom:16px;
+  }
+  .final-cta p{
+    color:var(--ink-soft);
+    font-size:16.5px;
+    max-width:44ch;
+    margin:0 auto 32px;
+  }
+
+  /* ---------- footer ---------- */
+  footer{
+    background:var(--ink);
+    color:var(--paper-light);
+    padding:44px 0 28px;
+  }
+  .footer-inner{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:24px;
+    padding-bottom:26px;
+    border-bottom:1px solid rgba(250,248,243,0.15);
+  }
+  .footer-brand .brand-mark{color:var(--paper-light);}
+  .footer-brand p{font-size:13px; color:rgba(250,248,243,0.6); margin:6px 0 0; max-width:34ch;}
+  .footer-col{font-size:13.5px;}
+  .footer-col .loc-label{color:rgba(250,248,243,0.5);}
+  .footer-col a{text-decoration:none;}
+  .footer-col a:hover{text-decoration:underline;}
+  .footer-bottom{
+    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
+    padding-top:20px;
+    font-size:12px;
+    font-family:var(--font-mono);
+    color:rgba(250,248,243,0.45);
+  }
+
+  /* ---------- floating whatsapp ---------- */
+  .fab{
+    position:fixed;
+    bottom:22px; right:22px;
+    z-index:60;
+    width:58px; height:58px;
+    border-radius:50%;
+    background:var(--wa);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow:0 6px 20px rgba(0,0,0,0.25);
+    text-decoration:none;
+    transition:transform .15s ease;
+  }
+  .fab:hover{transform:scale(1.06); background:var(--wa-dark);}
+  .fab svg{width:28px; height:28px; color:#0B2412;}
+
+  /* fade-in on load */
+  @keyframes rise{ from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:translateY(0);} }
+  .hero-inner > *{animation:rise .6s ease both;}
+  .hero-inner > *:nth-child(2){animation-delay:.08s;}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <div class="brand">
+      <span class="brand-mark">Foto Libra</span>
+      <span class="brand-tag">papelaria &amp; fotos · Tatuapé</span>
+    </div>
+    <nav class="nav-links">
+      <a href="#servicos">Serviços</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#local">Localização</a>
+    </nav>
+    <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Vim pelo site da Foto Libra e gostaria de mais informações.">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/><path d="M8.5 9.5c.3 2.6 2.4 4.7 5 5" stroke-linecap="round"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <p class="eyebrow">Papelaria · Fotos · Tatuapé, São Paulo</p>
+      <h1>Sua foto 3x4 sai <em>na hora</em>. Seu documento sai encadernado.</h1>
+      <p class="lead">Foto para documento, revelação e impressão de fotos, impressão de arquivos, plastificação e encadernação — tudo resolvido na Foto Libra, no Tatuapé. Chame no WhatsApp e combine o horário de retirada.</p>
+      <div class="hero-ctas">
+        <a href="#" class="btn btn-wa wa-btn" data-msg="Olá! Vim pelo site da Foto Libra e gostaria de mais informações.">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/><path d="M8.5 9.5c.3 2.6 2.4 4.7 5 5" stroke-linecap="round"/></svg>
+          Chamar no WhatsApp
+        </a>
+        <a href="#servicos" class="btn btn-ghost">Ver todos os serviços</a>
+      </div>
+      <div class="hero-meta">
+        <span><span class="dot"></span>Seg. a sex., 9h às 17h30</span>
+        <span><span class="dot"></span>Rua Emília Marengo, 34 — Tatuapé</span>
+      </div>
+    </div>
+
+    <div class="hero-art reg-frame">
+      <span class="reg-mark tl" aria-hidden="true"></span>
+      <span class="reg-mark tr" aria-hidden="true"></span>
+      <span class="reg-mark bl" aria-hidden="true"></span>
+      <span class="reg-mark br" aria-hidden="true"></span>
+      <svg viewBox="0 0 320 400" role="img" aria-label="Diagrama técnico de uma foto 3x4 com medidas de 3,5 por 4,5 centímetros">
+        <rect x="60" y="40" width="200" height="320" fill="var(--card)" stroke="var(--ink)" stroke-width="1.5"/>
+        <!-- corner crop marks -->
+        <g stroke="var(--red)" stroke-width="1.5">
+          <path d="M60 30v-14 M50 40h-14"/>
+          <path d="M260 30v-14 M270 40h14"/>
+          <path d="M60 370v14 M50 360h-14"/>
+          <path d="M260 370v14 M270 360h14"/>
+        </g>
+        <!-- guides -->
+        <line x1="160" y1="40" x2="160" y2="360" stroke="var(--ink)" stroke-opacity="0.15" stroke-dasharray="3 4"/>
+        <line x1="60" y1="200" x2="260" y2="200" stroke="var(--ink)" stroke-opacity="0.15" stroke-dasharray="3 4"/>
+        <!-- bust silhouette -->
+        <circle cx="160" cy="150" r="46" fill="var(--paper)" stroke="var(--ink)" stroke-width="1.5"/>
+        <path d="M92 330c8-52 52-84 68-84s60 32 68 84" fill="var(--paper)" stroke="var(--ink)" stroke-width="1.5"/>
+        <!-- measurement top -->
+        <g font-family="'IBM Plex Mono', monospace" font-size="12" fill="var(--ink-soft)">
+          <line x1="60" y1="14" x2="260" y2="14" stroke="var(--ink-soft)" stroke-width="1"/>
+          <line x1="60" y1="9" x2="60" y2="19" stroke="var(--ink-soft)" stroke-width="1"/>
+          <line x1="260" y1="9" x2="260" y2="19" stroke="var(--ink-soft)" stroke-width="1"/>
+          <text x="160" y="10" text-anchor="middle">3,5 cm</text>
+          <line x1="286" y1="40" x2="286" y2="360" stroke="var(--ink-soft)" stroke-width="1"/>
+          <line x1="281" y1="40" x2="291" y2="40" stroke="var(--ink-soft)" stroke-width="1"/>
+          <line x1="281" y1="360" x2="291" y2="360" stroke="var(--ink-soft)" stroke-width="1"/>
+          <text x="300" y="204" text-anchor="middle" transform="rotate(90 300 200)">4,5 cm</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap trust-inner">
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round"/></svg>
+      Foto 3x4 pronta na hora
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      No coração do Tatuapé
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="1.5"/><path d="M3 9h18M8 3v3M16 3v3" stroke-linecap="round"/></svg>
+      Seg. a sex., 9h – 17h30
+    </div>
+    <div class="trust-item">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
+      Atendimento pelo WhatsApp
+    </div>
+  </div>
+</section>
+
+<section class="section" id="servicos">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>O que a Foto Libra resolve pra você</h2>
+      <p class="note">Cinco serviços, uma loja só. Toque em "pedir no WhatsApp" e já explica o que precisa.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="card" data-code="01">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="7" width="19" height="13" rx="1.5"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+        </div>
+        <h3>Foto 3x4 (documento)</h3>
+        <p>Foto para RG, CNH, passaporte, concurso ou currículo, com fundo e medida certos pra não voltar do zero.</p>
+        <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Gostaria de tirar minha foto 3x4 na Foto Libra.">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
+          Pedir no WhatsApp
+        </a>
+      </div>
+
+      <div class="card" data-code="02">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="14" height="14" rx="1"/><rect x="7" y="8" width="14" height="14" rx="1" fill="var(--paper)"/><circle cx="14" cy="15" r="2.4"/></svg>
+        </div>
+        <h3>Revelação e impressão de fotos</h3>
+        <p>Envie as fotos do celular ou da câmera e retire impressas em papel fotográfico, prontas pro álbum ou pra moldura.</p>
+        <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Quero revelar/imprimir minhas fotos na Foto Libra.">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
+          Pedir no WhatsApp
+        </a>
+      </div>
+
+      <div class="card" data-code="03">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="1"/><path d="M6 17v4h12v-4"/></svg>
+        </div>
+        <h3>Impressão de documentos</h3>
+        <p>Provas, contratos, apostilas, currículos e arquivos em PDF ou Word, impressos em poucos minutos.</p>
+        <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Preciso imprimir alguns documentos, vocês fazem?">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
+          Pedir no WhatsApp
+        </a>
+      </div>
+
+      <div class="card" data-code="04">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M4 3l16 18M20 3L4 21" stroke-opacity="0.35"/></svg>
+        </div>
+        <h3>Plastificação</h3>
+        <p>Protege carteirinhas, cardápios, certificados e documentos importantes contra rasgo, água e o uso do dia a dia.</p>
+        <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Quero plastificar um documento, como funciona?">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
+          Pedir no WhatsApp
+        </a>
+      </div>
+
+      <div class="card" data-code="05">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="3" width="13" height="18" rx="1"/><path d="M4 5v2M4 9v2M4 13v2M4 17v2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Encadernação</h3>
+        <p>TCC, monografias, apostilas e relatórios encadernados em espiral ou capa dura, prontos pra entrega.</p>
+        <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Preciso encadernar um trabalho/TCC, quero saber mais.">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
+          Pedir no WhatsApp
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="como-funciona" style="padding-top:0;">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Como funciona</h2>
+      <p class="note">Três passos, do WhatsApp até a retirada.</p>
+    </div>
+    <div class="process-list">
+      <div class="process-item">
+        <span class="process-num">01 — CHAME</span>
+        <h3>Chame no WhatsApp</h3>
+        <p>Diga o que precisa: foto 3x4, impressão, plastificação ou encadernação.</p>
+      </div>
+      <div class="process-item">
+        <span class="process-num">02 — ENVIE</span>
+        <h3>Envie o arquivo ou venha até a loja</h3>
+        <p>Manda o PDF ou a foto pelo WhatsApp, ou traz o documento em mãos.</p>
+      </div>
+      <div class="process-item">
+        <span class="process-num">03 — RETIRE</span>
+        <h3>Retire pronto</h3>
+        <p>Combinamos o horário e você retira tudo prontinho, na Rua Emília Marengo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="location" id="local">
+  <div class="wrap section">
+    <div class="location-inner">
+      <div>
+        <h2>Onde estamos</h2>
+        <div class="loc-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+          <div>
+            <span class="loc-label">Endereço</span>
+            Rua Emília Marengo, 34 — Tatuapé, São Paulo
+          </div>
+        </div>
+        <div class="loc-line">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
+          <div>
+            <span class="loc-label">WhatsApp</span>
+            <a href="#" class="wa-btn" data-msg="Olá! Vim pelo site da Foto Libra e gostaria de mais informações.">(11) 2674-5297</a>
+          </div>
+        </div>
+        <div class="loc-line" style="border-bottom:none; align-items:flex-start;">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="1.5"/><path d="M3 9h18M8 3v3M16 3v3" stroke-linecap="round"/></svg>
+          <div style="width:100%;">
+            <span class="loc-label">Horário</span>
+            <table class="hours-table">
+              <tr><td>Segunda a sexta</td><td>9h – 17h30</td></tr>
+              <tr><td>Sábado e domingo</td><td>Fechado</td></tr>
+            </table>
+          </div>
+        </div>
+        <a href="https://www.google.com/maps/search/?api=1&query=Rua+Em%C3%ADlia+Marengo%2C+34+-+Tatuap%C3%A9%2C+S%C3%A3o+Paulo" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="margin-top:22px;">Abrir no Google Maps</a>
+      </div>
+
+      <div class="map-frame">
+        <iframe
+          src="https://www.google.com/maps?q=Rua+Em%C3%ADlia+Marengo%2C+34+-+Tatuap%C3%A9%2C+S%C3%A3o+Paulo&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Mapa com a localização da Foto Libra">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta reg-frame">
+  <span class="reg-mark tl" aria-hidden="true" style="left:24px; top:24px;"></span>
+  <span class="reg-mark tr" aria-hidden="true" style="right:24px; top:24px;"></span>
+  <div class="wrap">
+    <p class="eyebrow" style="justify-content:center;">Foto Libra · Tatuapé</p>
+    <h2>Precisa resolver sua foto ou documento hoje?</h2>
+    <p>Chame agora no WhatsApp da Foto Libra e já garanta seu atendimento, sem fila e sem enrolação.</p>
+    <a href="#" class="btn btn-wa wa-btn" data-msg="Olá! Vim pelo site da Foto Libra e gostaria de mais informações.">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/><path d="M8.5 9.5c.3 2.6 2.4 4.7 5 5" stroke-linecap="round"/></svg>
+      Chamar no WhatsApp agora
+    </a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark">Foto Libra</span>
+        <p>Foto 3x4, revelação e impressão de fotos, impressão de documentos, plastificação e encadernação, no Tatuapé.</p>
+      </div>
+      <div class="footer-col">
+        <span class="loc-label">Endereço</span>
+        Rua Emília Marengo, 34<br>Tatuapé, São Paulo
+      </div>
+      <div class="footer-col">
+        <span class="loc-label">Contato</span>
+        <a href="tel:+551126745297">(11) 2674-5297</a><br>
+        <a href="#" class="wa-btn" data-msg="Olá! Vim pelo site da Foto Libra e gostaria de mais informações.">WhatsApp</a>
+      </div>
+      <div class="footer-col">
+        <span class="loc-label">Horário</span>
+        Seg. a sex., 9h – 17h30<br>Sáb. e dom., fechado
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Foto Libra</span>
+      <span>Tatuapé, São Paulo</span>
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="fab wa-btn" data-msg="Olá! Vim pelo site da Foto Libra e gostaria de mais informações." aria-label="Chamar a Foto Libra no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/><path d="M8.5 9.5c.3 2.6 2.4 4.7 5 5" stroke-linecap="round"/></svg>
+</a>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  var WHATSAPP_NUMBER = '551126745297';
+  document.querySelectorAll('.wa-btn').forEach(function(el){
+    var msg = el.getAttribute('data-msg') || 'Olá! Vim pelo site da Foto Libra e gostaria de mais informações.';
+    el.setAttribute('href', 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(msg));
+    el.setAttribute('target', '_blank');
+    el.setAttribute('rel', 'noopener');
+  });
+</script>
+
+</body>
+</html>
