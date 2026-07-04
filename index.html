@@ -1,444 +1,613 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Foto Libra — Foto 3x4, Impressão, Plastificação e Encadernação | Tatuapé</title>
-<meta name="description" content="Foto Libra, no Tatuapé: foto 3x4 na hora, revelação e impressão de fotos, impressão de documentos, plastificação e encadernação. Chame no WhatsApp.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --paper:#EEEAE0;
-    --paper-light:#FAF8F3;
-    --card:#FFFFFF;
-    --ink:#1B1A17;
-    --ink-soft:#5B584F;
-    --line: rgba(27,26,23,0.16);
-    --red:#C92E1D;
-    --teal:#0E6F6D;
-    --yellow:#E8A711;
-    --wa:#25D366;
-    --wa-dark:#1CB454;
-    --radius: 3px;
-    --font-display: 'Archivo Black', sans-serif;
-    --font-body: 'IBM Plex Sans', sans-serif;
-    --font-mono: 'IBM Plex Mono', monospace;
-    --maxw: 1120px;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Foto Libra no Tatuapé | Foto 3x4, Impressão, Plastificação, Encadernação e Papelaria</title>
+  <meta name="description" content="Foto Libra, no Tatuapé: foto 3x4 na hora, impressão de fotos e documentos, plastificação, encadernação e itens de papelaria. Loja tradicional na Rua Emília Marengo.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="Foto Libra">
+  <meta name="theme-color" content="#DFFE3A">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Foto Libra">
+  <meta property="og:title" content="Foto Libra no Tatuapé | Foto 3x4, Impressão, Plastificação, Encadernação e Papelaria">
+  <meta property="og:description" content="Foto 3x4 na hora, impressão de documentos e fotos, plastificação, encadernação e papelaria no Tatuapé. Atendimento rápido na Rua Emília Marengo.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Foto Libra no Tatuapé">
+  <meta name="twitter:description" content="Serviços rápidos de foto, impressão, plastificação, encadernação e papelaria no Tatuapé.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Foto Libra",
+      "description": "Loja tradicional no Tatuapé com foto 3x4, revelação e impressão de fotos, impressão de documentos, plastificação, encadernação e itens de papelaria.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rua Emília Marengo, 34",
+        "addressLocality": "Tatuapé",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "telephone": "+55 11 2674-5297",
+      "areaServed": "Tatuapé, São Paulo",
+      "foundingDate": "1972",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "17:30"
+        }
+      ]
+    }
+  </script>
+  <style>
+    :root{
+      --paper:#fffef7;
+      --paper-light:#ffffff;
+      --paper-soft:#f8f7ea;
+      --paper-brand:#f4f7cf;
+      --card:#ffffff;
+      --ink:#141414;
+      --ink-soft:#4c4c43;
+      --line:rgba(20,20,20,0.12);
+      --brand:#dffe3a;
+      --brand-deep:#b8d61f;
+      --brand-soft:#eef7a6;
+      --brand-ink:#3f4e00;
+      --wa:#25D366;
+      --wa-dark:#1CB454;
+      --radius:18px;
+      --shadow:0 18px 48px rgba(20,20,20,0.07);
+      --font-display:'Archivo Black', sans-serif;
+      --font-body:'IBM Plex Sans', sans-serif;
+      --font-mono:'IBM Plex Mono', monospace;
+      --maxw:1120px;
+    }
 
-  *{box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
-  @media (prefers-reduced-motion: reduce){
-    html{scroll-behavior:auto;}
-    *{animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important;}
-  }
+    *{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{
+      margin:0;
+      background:linear-gradient(180deg, var(--paper) 0%, #fbfaef 100%);
+      color:var(--ink);
+      font-family:var(--font-body);
+      line-height:1.55;
+      -webkit-font-smoothing:antialiased;
+    }
+    img,svg{display:block;max-width:100%;}
+    a{color:inherit;}
 
-  body{
-    margin:0;
-    background:var(--paper);
-    color:var(--ink);
-    font-family:var(--font-body);
-    line-height:1.5;
-    -webkit-font-smoothing:antialiased;
-  }
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+    h1,h2,h3{font-family:var(--font-display);font-weight:400;line-height:1.04;margin:0;letter-spacing:-0.02em;}
+    p{margin:0;}
 
-  img,svg{display:block; max-width:100%;}
-  a{color:inherit;}
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      font-family:var(--font-mono);
+      font-size:12px;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+      color:var(--brand-ink);
+      background:rgba(223,254,58,0.36);
+      border:1px solid rgba(63,78,0,0.14);
+      border-radius:999px;
+      padding:8px 12px;
+      margin:0 0 18px;
+    }
+    .eyebrow::before{
+      content:"";
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:var(--brand-deep);
+      box-shadow:0 0 0 3px rgba(223,254,58,0.28);
+    }
 
-  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+    a:focus-visible, button:focus-visible{
+      outline:2px solid var(--brand-deep);
+      outline-offset:3px;
+    }
 
-  h1,h2,h3{font-family:var(--font-display); font-weight:400; line-height:1.05; margin:0; letter-spacing:-0.01em;}
-  .eyebrow{
-    font-family:var(--font-mono);
-    font-size:12.5px;
-    letter-spacing:0.14em;
-    text-transform:uppercase;
-    color:var(--red);
-    display:flex;
-    align-items:center;
-    gap:8px;
-    margin:0 0 14px;
-  }
-  .eyebrow::before{content:"+"; font-size:14px;}
+    .reg-frame{position:relative;}
+    .reg-mark{
+      position:absolute;
+      width:18px;
+      height:18px;
+      pointer-events:none;
+    }
+    .reg-mark::before,.reg-mark::after{
+      content:"";
+      position:absolute;
+      background:rgba(20,20,20,0.45);
+    }
+    .reg-mark::before{width:100%;height:1px;top:50%;left:0;}
+    .reg-mark::after{width:1px;height:100%;top:0;left:50%;}
+    .reg-mark.tl{top:-9px;left:-9px;}
+    .reg-mark.tr{top:-9px;right:-9px;}
+    .reg-mark.bl{bottom:-9px;left:-9px;}
+    .reg-mark.br{bottom:-9px;right:-9px;}
 
-  /* focus visibility */
-  a:focus-visible, button:focus-visible{
-    outline:2px solid var(--teal);
-    outline-offset:3px;
-  }
+    header.nav{
+      position:sticky;
+      top:0;
+      z-index:50;
+      background:rgba(255,254,247,0.88);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-inner{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      padding:16px 0;
+    }
+    .brand{
+      display:flex;
+      flex-direction:column;
+      gap:3px;
+      text-decoration:none;
+    }
+    .brand-mark{
+      font-family:var(--font-display);
+      font-size:23px;
+      line-height:1;
+    }
+    .brand-tag{
+      font-family:var(--font-mono);
+      font-size:11px;
+      color:var(--ink-soft);
+      letter-spacing:0.06em;
+      text-transform:uppercase;
+    }
+    .nav-links{
+      display:flex;
+      gap:26px;
+      font-size:14.5px;
+      font-weight:600;
+      color:var(--ink-soft);
+    }
+    .nav-links a{
+      text-decoration:none;
+      transition:color .15s ease;
+    }
+    .nav-links a:hover{color:var(--ink);}
+    @media (max-width:780px){.nav-links{display:none;}}
 
-  /* ---------- registration mark motif ---------- */
-  .reg-frame{position:relative;}
-  .reg-mark{
-    position:absolute;
-    width:16px; height:16px;
-    pointer-events:none;
-  }
-  .reg-mark::before, .reg-mark::after{
-    content:"";
-    position:absolute;
-    background:var(--ink);
-    opacity:0.55;
-  }
-  .reg-mark::before{ width:100%; height:1px; top:50%; left:0; }
-  .reg-mark::after{ width:1px; height:100%; top:0; left:50%; }
-  .reg-mark.tl{top:-8px; left:-8px;}
-  .reg-mark.tr{top:-8px; right:-8px;}
-  .reg-mark.bl{bottom:-8px; left:-8px;}
-  .reg-mark.br{bottom:-8px; right:-8px;}
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      text-decoration:none;
+      font-weight:700;
+      font-size:15px;
+      padding:14px 22px;
+      border-radius:999px;
+      border:1px solid transparent;
+      transition:transform .15s ease, box-shadow .15s ease, background .15s ease, color .15s ease;
+      white-space:nowrap;
+    }
+    .btn:hover{transform:translateY(-1px);}
+    .btn:active{transform:translateY(1px);}
+    .btn-wa{background:var(--wa);color:#08250e;}
+    .btn-wa:hover{background:var(--wa-dark);box-shadow:0 10px 24px rgba(37,211,102,0.28);}
+    .btn-ghost{
+      background:transparent;
+      border-color:rgba(20,20,20,0.16);
+      color:var(--ink);
+    }
+    .btn-ghost:hover{
+      background:var(--ink);
+      color:var(--paper-light);
+      border-color:var(--ink);
+    }
+    .btn-sm{padding:10px 16px;font-size:13.5px;}
+    .btn svg{width:18px;height:18px;}
 
-  /* ---------- header ---------- */
-  header.nav{
-    position:sticky; top:0; z-index:50;
-    background:rgba(238,234,224,0.92);
-    backdrop-filter:blur(6px);
-    border-bottom:1px solid var(--line);
-  }
-  .nav-inner{
-    display:flex; align-items:center; justify-content:space-between;
-    padding:16px 0;
-  }
-  .brand{display:flex; align-items:baseline; gap:9px;}
-  .brand-mark{
-    font-family:var(--font-display);
-    font-size:21px;
-    letter-spacing:-0.01em;
-  }
-  .brand-tag{
-    font-family:var(--font-mono);
-    font-size:11px;
-    color:var(--ink-soft);
-    letter-spacing:0.05em;
-  }
-  .nav-links{
-    display:flex; gap:28px;
-    font-size:14.5px;
-    font-weight:500;
-  }
-  .nav-links a{text-decoration:none; color:var(--ink-soft); transition:color .15s;}
-  .nav-links a:hover{color:var(--ink);}
-  @media (max-width:700px){ .nav-links{display:none;} }
+    .hero{
+      padding:70px 0 82px;
+      border-bottom:1px solid var(--line);
+    }
+    .hero-inner{
+      display:grid;
+      grid-template-columns:1.06fr 0.94fr;
+      gap:58px;
+      align-items:center;
+    }
+    .hero h1{
+      font-size:clamp(36px,5vw,60px);
+      margin-bottom:18px;
+      max-width:10ch;
+    }
+    .hero h1 em{
+      font-style:normal;
+      background:linear-gradient(180deg, transparent 58%, rgba(223,254,58,0.72) 58%);
+      padding:0 2px;
+    }
+    .hero .lead{
+      max-width:56ch;
+      font-size:18px;
+      color:var(--ink-soft);
+      margin-bottom:30px;
+    }
+    .hero-ctas{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px;
+      margin-bottom:28px;
+    }
+    .hero-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:14px 18px;
+      font-family:var(--font-mono);
+      font-size:12.5px;
+      color:var(--ink-soft);
+    }
+    .hero-meta span{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+    }
+    .dot{
+      width:8px;
+      height:8px;
+      border-radius:50%;
+      background:var(--brand-deep);
+      box-shadow:0 0 0 4px rgba(223,254,58,0.24);
+    }
+    .hero-art{
+      position:relative;
+      background:linear-gradient(180deg, rgba(223,254,58,0.2), rgba(255,255,255,0.96));
+      border:1px solid rgba(20,20,20,0.08);
+      border-radius:28px;
+      padding:30px;
+      box-shadow:var(--shadow);
+    }
+    .hero-art svg{width:100%;height:auto;}
 
-  /* ---------- buttons ---------- */
-  .btn{
-    display:inline-flex; align-items:center; gap:9px;
-    font-family:var(--font-body);
-    font-weight:600;
-    font-size:15px;
-    padding:13px 22px;
-    border-radius:var(--radius);
-    text-decoration:none;
-    border:1px solid transparent;
-    cursor:pointer;
-    transition:transform .12s ease, box-shadow .12s ease, background .15s ease;
-    white-space:nowrap;
-  }
-  .btn:active{transform:translateY(1px);}
-  .btn-wa{
-    background:var(--wa);
-    color:#0B2412;
-  }
-  .btn-wa:hover{background:var(--wa-dark); box-shadow:0 4px 14px rgba(37,211,102,0.35);}
-  .btn-wa svg{width:18px; height:18px;}
-  .btn-ghost{
-    background:transparent;
-    border:1px solid var(--ink);
-    color:var(--ink);
-    padding:12px 21px;
-  }
-  .btn-ghost:hover{background:var(--ink); color:var(--paper-light);}
-  .btn-sm{padding:10px 16px; font-size:13.5px;}
+    @media (max-width:900px){
+      .hero-inner{grid-template-columns:1fr;gap:34px;}
+      .hero-art{order:-1;max-width:360px;margin:0 auto;}
+      .hero h1{max-width:12ch;}
+    }
 
-  /* ---------- hero ---------- */
-  .hero{
-    padding:64px 0 76px;
-    border-bottom:1px solid var(--line);
-  }
-  .hero-inner{
-    display:grid;
-    grid-template-columns:1.1fr 0.9fr;
-    gap:56px;
-    align-items:center;
-  }
-  .hero h1{
-    font-size:clamp(34px, 5vw, 54px);
-    margin-bottom:20px;
-  }
-  .hero h1 em{
-    font-style:normal;
-    color:var(--red);
-  }
-  .hero p.lead{
-    font-size:17.5px;
-    color:var(--ink-soft);
-    max-width:46ch;
-    margin:0 0 30px;
-  }
-  .hero-ctas{display:flex; gap:14px; flex-wrap:wrap; margin-bottom:26px;}
-  .hero-meta{
-    font-family:var(--font-mono);
-    font-size:12.5px;
-    color:var(--ink-soft);
-    display:flex; gap:18px; flex-wrap:wrap;
-  }
-  .hero-meta span{display:flex; align-items:center; gap:6px;}
-  .dot{width:6px; height:6px; border-radius:50%; background:var(--teal); display:inline-block;}
+    .trust{
+      background:var(--ink);
+      color:var(--paper-light);
+    }
+    .trust-inner{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:18px;
+      padding:22px 0;
+    }
+    .trust-item{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      font-size:13px;
+      font-family:var(--font-mono);
+    }
+    .trust-item svg{
+      width:18px;
+      height:18px;
+      flex-shrink:0;
+      color:var(--brand);
+    }
+    @media (max-width:860px){.trust-inner{grid-template-columns:repeat(2,1fr);}}
+    @media (max-width:520px){.trust-inner{grid-template-columns:1fr;}}
 
-  .hero-art{
-    position:relative;
-    padding:26px;
-  }
-  .hero-art svg{width:100%; height:auto;}
+    .section{padding:86px 0;}
+    .section-head{
+      display:flex;
+      justify-content:space-between;
+      align-items:flex-end;
+      gap:22px;
+      margin-bottom:34px;
+      padding-bottom:18px;
+      border-bottom:1px solid var(--line);
+    }
+    .section-head h2{font-size:clamp(28px,3.4vw,38px);}
+    .section-head .note{
+      max-width:33ch;
+      text-align:right;
+      font-size:13px;
+      font-family:var(--font-mono);
+      color:var(--ink-soft);
+    }
+    @media (max-width:680px){
+      .section-head{flex-direction:column;align-items:flex-start;}
+      .section-head .note{text-align:left;}
+    }
 
-  @media (max-width:860px){
-    .hero-inner{grid-template-columns:1fr; gap:40px;}
-    .hero-art{order:-1; max-width:280px; margin:0 auto;}
-  }
+    .services-grid{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+    @media (max-width:930px){.services-grid{grid-template-columns:repeat(2,1fr);}}
+    @media (max-width:620px){.services-grid{grid-template-columns:1fr;}}
 
-  /* ---------- trust strip ---------- */
-  .trust{
-    background:var(--ink);
-    color:var(--paper-light);
-  }
-  .trust-inner{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:20px;
-    padding:22px 0;
-  }
-  .trust-item{
-    display:flex; align-items:center; gap:10px;
-    font-size:13.5px;
-    font-family:var(--font-mono);
-  }
-  .trust-item svg{width:18px; height:18px; flex-shrink:0; color:var(--yellow);}
-  @media (max-width:860px){
-    .trust-inner{grid-template-columns:repeat(2,1fr);}
-  }
-  @media (max-width:480px){
-    .trust-inner{grid-template-columns:1fr;}
-  }
+    .card{
+      position:relative;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+      min-height:100%;
+      padding:26px 24px 22px;
+      border-radius:24px;
+      background:var(--card);
+      border:1px solid rgba(20,20,20,0.08);
+      box-shadow:0 14px 34px rgba(20,20,20,0.05);
+    }
+    .card::after{
+      content:attr(data-code);
+      position:absolute;
+      top:18px;
+      right:20px;
+      font-family:var(--font-mono);
+      font-size:11px;
+      color:rgba(20,20,20,0.24);
+    }
+    .card-icon{
+      width:48px;
+      height:48px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:16px;
+      background:linear-gradient(180deg, rgba(223,254,58,0.56), rgba(223,254,58,0.18));
+      color:var(--ink);
+    }
+    .card-icon svg{width:24px;height:24px;}
+    .card h3{
+      font-family:var(--font-body);
+      font-size:18px;
+      font-weight:700;
+    }
+    .card p{
+      color:var(--ink-soft);
+      font-size:14.5px;
+      flex-grow:1;
+    }
+    .card .btn-wa{align-self:flex-start;margin-top:4px;}
 
-  /* ---------- section heading ---------- */
-  .section{padding:80px 0;}
-  .section-head{
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-end;
-    gap:24px;
-    margin-bottom:44px;
-    border-bottom:1px solid var(--line);
-    padding-bottom:22px;
-  }
-  .section-head h2{font-size:clamp(26px,3.4vw,36px);}
-  .section-head .note{
-    font-family:var(--font-mono);
-    font-size:12.5px;
-    color:var(--ink-soft);
-    max-width:30ch;
-    text-align:right;
-  }
-  @media (max-width:640px){
-    .section-head{flex-direction:column; align-items:flex-start;}
-    .section-head .note{text-align:left;}
-  }
+    .about{
+      background:
+        radial-gradient(circle at top left, rgba(223,254,58,0.34), transparent 32%),
+        linear-gradient(180deg, var(--paper-brand) 0%, #fbfbe8 100%);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+    .about-grid{
+      display:grid;
+      grid-template-columns:1.1fr 0.9fr;
+      gap:30px;
+      align-items:start;
+    }
+    .about-copy p{
+      font-size:16.5px;
+      color:var(--ink-soft);
+      max-width:60ch;
+    }
+    .about-copy p + p{margin-top:16px;}
+    .about-points{
+      display:grid;
+      gap:14px;
+    }
+    .about-box{
+      background:rgba(255,255,255,0.84);
+      border:1px solid rgba(20,20,20,0.08);
+      border-radius:22px;
+      padding:22px;
+      box-shadow:0 12px 30px rgba(20,20,20,0.05);
+    }
+    .about-box strong{
+      display:block;
+      font-family:var(--font-display);
+      font-size:26px;
+      margin-bottom:8px;
+    }
+    .about-box span{
+      display:block;
+      color:var(--ink-soft);
+      font-size:14px;
+    }
+    @media (max-width:900px){.about-grid{grid-template-columns:1fr;}}
 
-  /* ---------- services ---------- */
-  .services-grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:18px;
-  }
-  @media (max-width:900px){ .services-grid{grid-template-columns:repeat(2,1fr);} }
-  @media (max-width:600px){ .services-grid{grid-template-columns:1fr;} }
+    .process-list{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      border:1px solid rgba(20,20,20,0.08);
+      border-radius:28px;
+      overflow:hidden;
+      box-shadow:0 16px 36px rgba(20,20,20,0.05);
+    }
+    .process-item{
+      background:var(--card);
+      padding:30px 26px;
+      border-right:1px solid var(--line);
+    }
+    .process-item:last-child{border-right:none;}
+    .process-num{
+      display:block;
+      margin-bottom:14px;
+      font-family:var(--font-mono);
+      font-size:12px;
+      color:var(--brand-ink);
+    }
+    .process-item h3{
+      font-family:var(--font-body);
+      font-weight:700;
+      font-size:17px;
+      margin-bottom:8px;
+    }
+    .process-item p{
+      color:var(--ink-soft);
+      font-size:14.5px;
+    }
+    @media (max-width:780px){
+      .process-list{grid-template-columns:1fr;}
+      .process-item{border-right:none;border-bottom:1px solid var(--line);}
+      .process-item:last-child{border-bottom:none;}
+    }
 
-  .card{
-    background:var(--card);
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    padding:26px 24px 22px;
-    display:flex;
-    flex-direction:column;
-    gap:14px;
-    position:relative;
-  }
-  .card-icon{
-    width:42px; height:42px;
-    display:flex; align-items:center; justify-content:center;
-    border:1px solid var(--ink);
-    border-radius:50%;
-    color:var(--ink);
-  }
-  .card-icon svg{width:22px; height:22px;}
-  .card h3{
-    font-family:var(--font-body);
-    font-weight:700;
-    font-size:17.5px;
-  }
-  .card p{
-    font-size:14.5px;
-    color:var(--ink-soft);
-    margin:0;
-    flex-grow:1;
-  }
-  .card .btn-wa{align-self:flex-start; margin-top:4px;}
-  .card::after{
-    content:attr(data-code);
-    position:absolute;
-    top:16px; right:18px;
-    font-family:var(--font-mono);
-    font-size:11px;
-    color:var(--line);
-    color:rgba(27,26,23,0.28);
-  }
+    .location{
+      background:var(--paper-soft);
+      border-top:1px solid var(--line);
+      border-bottom:1px solid var(--line);
+    }
+    .location-inner{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:42px;
+      align-items:start;
+    }
+    .location h2{
+      font-size:clamp(28px,3.4vw,38px);
+      margin-bottom:18px;
+    }
+    .loc-line{
+      display:flex;
+      gap:12px;
+      padding:14px 0;
+      border-bottom:1px solid var(--line);
+      font-size:14.5px;
+    }
+    .loc-line svg{
+      width:18px;
+      height:18px;
+      margin-top:2px;
+      flex-shrink:0;
+      color:var(--brand-ink);
+    }
+    .loc-label{
+      display:block;
+      margin-bottom:4px;
+      font-family:var(--font-mono);
+      font-size:11px;
+      text-transform:uppercase;
+      letter-spacing:0.06em;
+      color:var(--ink-soft);
+    }
+    .hours-table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:6px;
+      font-size:14px;
+    }
+    .hours-table td{padding:5px 0;}
+    .hours-table td:last-child{text-align:right;font-family:var(--font-mono);}
+    .map-frame{
+      overflow:hidden;
+      border-radius:24px;
+      border:1px solid rgba(20,20,20,0.08);
+      aspect-ratio:4/3.3;
+      box-shadow:var(--shadow);
+    }
+    .map-frame iframe{width:100%;height:100%;border:0;}
+    @media (max-width:900px){.location-inner{grid-template-columns:1fr;}}
 
-  /* ---------- process ---------- */
-  .process-list{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:0;
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    overflow:hidden;
-  }
-  .process-item{
-    padding:30px 26px;
-    border-right:1px solid var(--line);
-    background:var(--card);
-  }
-  .process-item:last-child{border-right:none;}
-  .process-num{
-    font-family:var(--font-mono);
-    font-size:12px;
-    color:var(--red);
-    margin-bottom:14px;
-    display:block;
-  }
-  .process-item h3{
-    font-family:var(--font-body);
-    font-weight:700;
-    font-size:16.5px;
-    margin-bottom:8px;
-  }
-  .process-item p{
-    font-size:14px;
-    color:var(--ink-soft);
-    margin:0;
-  }
-  @media (max-width:760px){
-    .process-list{grid-template-columns:1fr;}
-    .process-item{border-right:none; border-bottom:1px solid var(--line);}
-    .process-item:last-child{border-bottom:none;}
-  }
+    .final-cta{
+      padding:92px 0;
+      text-align:center;
+    }
+    .final-cta h2{
+      font-size:clamp(30px,4.2vw,48px);
+      margin-bottom:16px;
+    }
+    .final-cta p{
+      max-width:48ch;
+      margin:0 auto 30px;
+      color:var(--ink-soft);
+      font-size:16.5px;
+    }
 
-  /* ---------- location ---------- */
-  .location{background:var(--paper-light); border-top:1px solid var(--line); border-bottom:1px solid var(--line);}
-  .location-inner{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:44px;
-    align-items:start;
-  }
-  .location h2{font-size:clamp(26px,3.4vw,36px); margin-bottom:18px;}
-  .loc-line{
-    display:flex; gap:12px;
-    padding:14px 0;
-    border-bottom:1px solid var(--line);
-    font-size:14.5px;
-  }
-  .loc-line:last-of-type{border-bottom:none;}
-  .loc-line svg{width:18px; height:18px; flex-shrink:0; margin-top:2px; color:var(--teal);}
-  .loc-label{font-family:var(--font-mono); font-size:11px; text-transform:uppercase; letter-spacing:0.06em; color:var(--ink-soft); display:block; margin-bottom:3px;}
-  .hours-table{width:100%; border-collapse:collapse; margin-top:6px; font-size:14px;}
-  .hours-table td{padding:5px 0;}
-  .hours-table td:last-child{text-align:right; font-family:var(--font-mono);}
-  .map-frame{
-    border:1px solid var(--line);
-    border-radius:var(--radius);
-    overflow:hidden;
-    aspect-ratio:4/3.4;
-  }
-  .map-frame iframe{width:100%; height:100%; border:0;}
-  @media (max-width:860px){ .location-inner{grid-template-columns:1fr;} }
+    footer{
+      background:var(--ink);
+      color:var(--paper-light);
+      padding:44px 0 28px;
+    }
+    .footer-inner{
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:24px;
+      padding-bottom:24px;
+      border-bottom:1px solid rgba(255,255,255,0.12);
+    }
+    .footer-brand .brand-mark{color:var(--paper-light);}
+    .footer-brand p{
+      max-width:35ch;
+      margin-top:8px;
+      color:rgba(255,255,255,0.68);
+      font-size:13px;
+    }
+    .footer-col{font-size:13.5px;}
+    .footer-col .loc-label{color:rgba(255,255,255,0.5);}
+    .footer-col a{text-decoration:none;}
+    .footer-col a:hover{text-decoration:underline;}
+    .footer-bottom{
+      display:flex;
+      justify-content:space-between;
+      flex-wrap:wrap;
+      gap:10px;
+      padding-top:20px;
+      color:rgba(255,255,255,0.46);
+      font-size:12px;
+      font-family:var(--font-mono);
+    }
 
-  /* ---------- final cta ---------- */
-  .final-cta{
-    padding:90px 0;
-    text-align:center;
-  }
-  .final-cta h2{
-    font-size:clamp(28px,4.4vw,46px);
-    margin-bottom:16px;
-  }
-  .final-cta p{
-    color:var(--ink-soft);
-    font-size:16.5px;
-    max-width:44ch;
-    margin:0 auto 32px;
-  }
+    .fab{
+      position:fixed;
+      right:22px;
+      bottom:22px;
+      z-index:60;
+      width:58px;
+      height:58px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      border-radius:50%;
+      background:var(--wa);
+      color:#08250e;
+      text-decoration:none;
+      box-shadow:0 12px 28px rgba(0,0,0,0.22);
+      transition:transform .15s ease, background .15s ease;
+    }
+    .fab:hover{transform:scale(1.05);background:var(--wa-dark);}
+    .fab svg{width:28px;height:28px;}
 
-  /* ---------- footer ---------- */
-  footer{
-    background:var(--ink);
-    color:var(--paper-light);
-    padding:44px 0 28px;
-  }
-  .footer-inner{
-    display:flex;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    gap:24px;
-    padding-bottom:26px;
-    border-bottom:1px solid rgba(250,248,243,0.15);
-  }
-  .footer-brand .brand-mark{color:var(--paper-light);}
-  .footer-brand p{font-size:13px; color:rgba(250,248,243,0.6); margin:6px 0 0; max-width:34ch;}
-  .footer-col{font-size:13.5px;}
-  .footer-col .loc-label{color:rgba(250,248,243,0.5);}
-  .footer-col a{text-decoration:none;}
-  .footer-col a:hover{text-decoration:underline;}
-  .footer-bottom{
-    display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;
-    padding-top:20px;
-    font-size:12px;
-    font-family:var(--font-mono);
-    color:rgba(250,248,243,0.45);
-  }
-
-  /* ---------- floating whatsapp ---------- */
-  .fab{
-    position:fixed;
-    bottom:22px; right:22px;
-    z-index:60;
-    width:58px; height:58px;
-    border-radius:50%;
-    background:var(--wa);
-    display:flex; align-items:center; justify-content:center;
-    box-shadow:0 6px 20px rgba(0,0,0,0.25);
-    text-decoration:none;
-    transition:transform .15s ease;
-  }
-  .fab:hover{transform:scale(1.06); background:var(--wa-dark);}
-  .fab svg{width:28px; height:28px; color:#0B2412;}
-
-  /* fade-in on load */
-  @keyframes rise{ from{opacity:0; transform:translateY(10px);} to{opacity:1; transform:translateY(0);} }
-  .hero-inner > *{animation:rise .6s ease both;}
-  .hero-inner > *:nth-child(2){animation-delay:.08s;}
-</style>
+    @keyframes rise{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+    .hero-inner > *{animation:rise .6s ease both;}
+    .hero-inner > *:nth-child(2){animation-delay:.08s;}
+  </style>
 </head>
 <body>
 
 <header class="nav">
   <div class="wrap nav-inner">
-    <div class="brand">
+    <a class="brand" href="#top" aria-label="Foto Libra, voltar ao topo">
       <span class="brand-mark">Foto Libra</span>
-      <span class="brand-tag">papelaria &amp; fotos · Tatuapé</span>
-    </div>
-    <nav class="nav-links">
+      <span class="brand-tag">papelaria, fotos e serviços rápidos · Tatuapé</span>
+    </a>
+    <nav class="nav-links" aria-label="Navegação principal">
       <a href="#servicos">Serviços</a>
+      <a href="#quem-somos">Quem somos</a>
       <a href="#como-funciona">Como funciona</a>
       <a href="#local">Localização</a>
     </nav>
@@ -449,245 +618,283 @@
   </div>
 </header>
 
-<section class="hero">
-  <div class="wrap hero-inner">
-    <div>
-      <p class="eyebrow">Papelaria · Fotos · Tatuapé, São Paulo</p>
-      <h1>Sua foto 3x4 sai <em>na hora</em>. Seu documento sai encadernado.</h1>
-      <p class="lead">Foto para documento, revelação e impressão de fotos, impressão de arquivos, plastificação e encadernação — tudo resolvido na Foto Libra, no Tatuapé. Chame no WhatsApp e combine o horário de retirada.</p>
-      <div class="hero-ctas">
-        <a href="#" class="btn btn-wa wa-btn" data-msg="Olá! Vim pelo site da Foto Libra e gostaria de mais informações.">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/><path d="M8.5 9.5c.3 2.6 2.4 4.7 5 5" stroke-linecap="round"/></svg>
-          Chamar no WhatsApp
-        </a>
-        <a href="#servicos" class="btn btn-ghost">Ver todos os serviços</a>
-      </div>
-      <div class="hero-meta">
-        <span><span class="dot"></span>Seg. a sex., 9h às 17h30</span>
-        <span><span class="dot"></span>Rua Emília Marengo, 34 — Tatuapé</span>
-      </div>
-    </div>
-
-    <div class="hero-art reg-frame">
-      <span class="reg-mark tl" aria-hidden="true"></span>
-      <span class="reg-mark tr" aria-hidden="true"></span>
-      <span class="reg-mark bl" aria-hidden="true"></span>
-      <span class="reg-mark br" aria-hidden="true"></span>
-      <svg viewBox="0 0 320 400" role="img" aria-label="Diagrama técnico de uma foto 3x4 com medidas de 3,5 por 4,5 centímetros">
-        <rect x="60" y="40" width="200" height="320" fill="var(--card)" stroke="var(--ink)" stroke-width="1.5"/>
-        <!-- corner crop marks -->
-        <g stroke="var(--red)" stroke-width="1.5">
-          <path d="M60 30v-14 M50 40h-14"/>
-          <path d="M260 30v-14 M270 40h14"/>
-          <path d="M60 370v14 M50 360h-14"/>
-          <path d="M260 370v14 M270 360h14"/>
-        </g>
-        <!-- guides -->
-        <line x1="160" y1="40" x2="160" y2="360" stroke="var(--ink)" stroke-opacity="0.15" stroke-dasharray="3 4"/>
-        <line x1="60" y1="200" x2="260" y2="200" stroke="var(--ink)" stroke-opacity="0.15" stroke-dasharray="3 4"/>
-        <!-- bust silhouette -->
-        <circle cx="160" cy="150" r="46" fill="var(--paper)" stroke="var(--ink)" stroke-width="1.5"/>
-        <path d="M92 330c8-52 52-84 68-84s60 32 68 84" fill="var(--paper)" stroke="var(--ink)" stroke-width="1.5"/>
-        <!-- measurement top -->
-        <g font-family="'IBM Plex Mono', monospace" font-size="12" fill="var(--ink-soft)">
-          <line x1="60" y1="14" x2="260" y2="14" stroke="var(--ink-soft)" stroke-width="1"/>
-          <line x1="60" y1="9" x2="60" y2="19" stroke="var(--ink-soft)" stroke-width="1"/>
-          <line x1="260" y1="9" x2="260" y2="19" stroke="var(--ink-soft)" stroke-width="1"/>
-          <text x="160" y="10" text-anchor="middle">3,5 cm</text>
-          <line x1="286" y1="40" x2="286" y2="360" stroke="var(--ink-soft)" stroke-width="1"/>
-          <line x1="281" y1="40" x2="291" y2="40" stroke="var(--ink-soft)" stroke-width="1"/>
-          <line x1="281" y1="360" x2="291" y2="360" stroke="var(--ink-soft)" stroke-width="1"/>
-          <text x="300" y="204" text-anchor="middle" transform="rotate(90 300 200)">4,5 cm</text>
-        </g>
-      </svg>
-    </div>
-  </div>
-</section>
-
-<section class="trust">
-  <div class="wrap trust-inner">
-    <div class="trust-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round"/></svg>
-      Foto 3x4 pronta na hora
-    </div>
-    <div class="trust-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      No coração do Tatuapé
-    </div>
-    <div class="trust-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="1.5"/><path d="M3 9h18M8 3v3M16 3v3" stroke-linecap="round"/></svg>
-      Seg. a sex., 9h – 17h30
-    </div>
-    <div class="trust-item">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
-      Atendimento pelo WhatsApp
-    </div>
-  </div>
-</section>
-
-<section class="section" id="servicos">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>O que a Foto Libra resolve pra você</h2>
-      <p class="note">Cinco serviços, uma loja só. Toque em "pedir no WhatsApp" e já explica o que precisa.</p>
-    </div>
-
-    <div class="services-grid">
-
-      <div class="card" data-code="01">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="7" width="19" height="13" rx="1.5"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
-        </div>
-        <h3>Foto 3x4 (documento)</h3>
-        <p>Foto para RG, CNH, passaporte, concurso ou currículo, com fundo e medida certos pra não voltar do zero.</p>
-        <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Gostaria de tirar minha foto 3x4 na Foto Libra.">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
-          Pedir no WhatsApp
-        </a>
-      </div>
-
-      <div class="card" data-code="02">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="14" height="14" rx="1"/><rect x="7" y="8" width="14" height="14" rx="1" fill="var(--paper)"/><circle cx="14" cy="15" r="2.4"/></svg>
-        </div>
-        <h3>Revelação e impressão de fotos</h3>
-        <p>Envie as fotos do celular ou da câmera e retire impressas em papel fotográfico, prontas pro álbum ou pra moldura.</p>
-        <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Quero revelar/imprimir minhas fotos na Foto Libra.">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
-          Pedir no WhatsApp
-        </a>
-      </div>
-
-      <div class="card" data-code="03">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="1"/><path d="M6 17v4h12v-4"/></svg>
-        </div>
-        <h3>Impressão de documentos</h3>
-        <p>Provas, contratos, apostilas, currículos e arquivos em PDF ou Word, impressos em poucos minutos.</p>
-        <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Preciso imprimir alguns documentos, vocês fazem?">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
-          Pedir no WhatsApp
-        </a>
-      </div>
-
-      <div class="card" data-code="04">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M4 3l16 18M20 3L4 21" stroke-opacity="0.35"/></svg>
-        </div>
-        <h3>Plastificação</h3>
-        <p>Protege carteirinhas, cardápios, certificados e documentos importantes contra rasgo, água e o uso do dia a dia.</p>
-        <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Quero plastificar um documento, como funciona?">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
-          Pedir no WhatsApp
-        </a>
-      </div>
-
-      <div class="card" data-code="05">
-        <div class="card-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="3" width="13" height="18" rx="1"/><path d="M4 5v2M4 9v2M4 13v2M4 17v2" stroke-linecap="round"/></svg>
-        </div>
-        <h3>Encadernação</h3>
-        <p>TCC, monografias, apostilas e relatórios encadernados em espiral ou capa dura, prontos pra entrega.</p>
-        <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Preciso encadernar um trabalho/TCC, quero saber mais.">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
-          Pedir no WhatsApp
-        </a>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="section" id="como-funciona" style="padding-top:0;">
-  <div class="wrap">
-    <div class="section-head">
-      <h2>Como funciona</h2>
-      <p class="note">Três passos, do WhatsApp até a retirada.</p>
-    </div>
-    <div class="process-list">
-      <div class="process-item">
-        <span class="process-num">01 — CHAME</span>
-        <h3>Chame no WhatsApp</h3>
-        <p>Diga o que precisa: foto 3x4, impressão, plastificação ou encadernação.</p>
-      </div>
-      <div class="process-item">
-        <span class="process-num">02 — ENVIE</span>
-        <h3>Envie o arquivo ou venha até a loja</h3>
-        <p>Manda o PDF ou a foto pelo WhatsApp, ou traz o documento em mãos.</p>
-      </div>
-      <div class="process-item">
-        <span class="process-num">03 — RETIRE</span>
-        <h3>Retire pronto</h3>
-        <p>Combinamos o horário e você retira tudo prontinho, na Rua Emília Marengo.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="location" id="local">
-  <div class="wrap section">
-    <div class="location-inner">
+<main id="top">
+  <section class="hero">
+    <div class="wrap hero-inner">
       <div>
-        <h2>Onde estamos</h2>
-        <div class="loc-line">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
-          <div>
-            <span class="loc-label">Endereço</span>
-            Rua Emília Marengo, 34 — Tatuapé, São Paulo
-          </div>
+        <p class="eyebrow">Tradicional no Tatuapé desde os anos 1970</p>
+        <h1>Sua foto 3x4 sai <em>na hora</em>. Seu documento sai plastificado.</h1>
+        <p class="lead">Foto para documento, revelação e impressão de fotos, impressão de arquivos, plastificação, encadernação e itens de papelaria em um só lugar. A Foto Libra resolve o que você precisa com agilidade, atendimento próximo e retirada no coração do Tatuapé.</p>
+        <div class="hero-ctas">
+          <a href="#" class="btn btn-wa wa-btn" data-msg="Olá! Vim pelo site da Foto Libra e gostaria de mais informações.">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/><path d="M8.5 9.5c.3 2.6 2.4 4.7 5 5" stroke-linecap="round"/></svg>
+            Chamar no WhatsApp
+          </a>
+          <a href="#servicos" class="btn btn-ghost">Ver todos os serviços</a>
         </div>
-        <div class="loc-line">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
-          <div>
-            <span class="loc-label">WhatsApp</span>
-            <a href="#" class="wa-btn" data-msg="Olá! Vim pelo site da Foto Libra e gostaria de mais informações.">(11) 2674-5297</a>
-          </div>
+        <div class="hero-meta">
+          <span><span class="dot"></span>Seg. a sex., 9h às 17h30</span>
+          <span><span class="dot"></span>Rua Emília Marengo, 34</span>
+          <span><span class="dot"></span>Fotos, documentos e papelaria</span>
         </div>
-        <div class="loc-line" style="border-bottom:none; align-items:flex-start;">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="1.5"/><path d="M3 9h18M8 3v3M16 3v3" stroke-linecap="round"/></svg>
-          <div style="width:100%;">
-            <span class="loc-label">Horário</span>
-            <table class="hours-table">
-              <tr><td>Segunda a sexta</td><td>9h – 17h30</td></tr>
-              <tr><td>Sábado e domingo</td><td>Fechado</td></tr>
-            </table>
-          </div>
-        </div>
-        <a href="https://www.google.com/maps/search/?api=1&query=Rua+Em%C3%ADlia+Marengo%2C+34+-+Tatuap%C3%A9%2C+S%C3%A3o+Paulo" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="margin-top:22px;">Abrir no Google Maps</a>
       </div>
 
-      <div class="map-frame">
-        <iframe
-          src="https://www.google.com/maps?q=Rua+Em%C3%ADlia+Marengo%2C+34+-+Tatuap%C3%A9%2C+S%C3%A3o+Paulo&output=embed"
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-          title="Mapa com a localização da Foto Libra">
-        </iframe>
+      <div class="hero-art reg-frame">
+        <span class="reg-mark tl" aria-hidden="true"></span>
+        <span class="reg-mark tr" aria-hidden="true"></span>
+        <span class="reg-mark bl" aria-hidden="true"></span>
+        <span class="reg-mark br" aria-hidden="true"></span>
+        <svg viewBox="0 0 320 400" role="img" aria-label="Ilustração de uma foto 3x4 com medidas e detalhes de acabamento">
+          <rect x="60" y="40" width="200" height="320" rx="12" fill="var(--card)" stroke="var(--ink)" stroke-width="1.5"/>
+          <g stroke="var(--brand-deep)" stroke-width="1.5">
+            <path d="M60 30v-14 M50 40h-14"/>
+            <path d="M260 30v-14 M270 40h14"/>
+            <path d="M60 370v14 M50 360h-14"/>
+            <path d="M260 370v14 M270 360h14"/>
+          </g>
+          <line x1="160" y1="40" x2="160" y2="360" stroke="var(--ink)" stroke-opacity="0.14" stroke-dasharray="3 4"/>
+          <line x1="60" y1="200" x2="260" y2="200" stroke="var(--ink)" stroke-opacity="0.14" stroke-dasharray="3 4"/>
+          <circle cx="160" cy="145" r="46" fill="var(--paper-brand)" stroke="var(--ink)" stroke-width="1.5"/>
+          <path d="M92 330c8-52 52-84 68-84s60 32 68 84" fill="var(--paper-brand)" stroke="var(--ink)" stroke-width="1.5"/>
+          <rect x="88" y="286" width="144" height="28" rx="14" fill="rgba(223,254,58,0.42)" stroke="rgba(63,78,0,0.16)"/>
+          <text x="160" y="304" text-anchor="middle" font-family="'IBM Plex Mono', monospace" font-size="11.5" fill="var(--brand-ink)">ATENDIMENTO RÁPIDO</text>
+          <g font-family="'IBM Plex Mono', monospace" font-size="12" fill="var(--ink-soft)">
+            <line x1="60" y1="14" x2="260" y2="14" stroke="var(--ink-soft)" stroke-width="1"/>
+            <line x1="60" y1="9" x2="60" y2="19" stroke="var(--ink-soft)" stroke-width="1"/>
+            <line x1="260" y1="9" x2="260" y2="19" stroke="var(--ink-soft)" stroke-width="1"/>
+            <text x="160" y="10" text-anchor="middle">3,5 cm</text>
+            <line x1="286" y1="40" x2="286" y2="360" stroke="var(--ink-soft)" stroke-width="1"/>
+            <line x1="281" y1="40" x2="291" y2="40" stroke="var(--ink-soft)" stroke-width="1"/>
+            <line x1="281" y1="360" x2="291" y2="360" stroke="var(--ink-soft)" stroke-width="1"/>
+            <text x="300" y="204" text-anchor="middle" transform="rotate(90 300 200)">4,5 cm</text>
+          </g>
+        </svg>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="final-cta reg-frame">
-  <span class="reg-mark tl" aria-hidden="true" style="left:24px; top:24px;"></span>
-  <span class="reg-mark tr" aria-hidden="true" style="right:24px; top:24px;"></span>
-  <div class="wrap">
-    <p class="eyebrow" style="justify-content:center;">Foto Libra · Tatuapé</p>
-    <h2>Precisa resolver sua foto ou documento hoje?</h2>
-    <p>Chame agora no WhatsApp da Foto Libra e já garanta seu atendimento, sem fila e sem enrolação.</p>
-    <a href="#" class="btn btn-wa wa-btn" data-msg="Olá! Vim pelo site da Foto Libra e gostaria de mais informações.">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/><path d="M8.5 9.5c.3 2.6 2.4 4.7 5 5" stroke-linecap="round"/></svg>
-      Chamar no WhatsApp agora
-    </a>
-  </div>
-</section>
+  <section class="trust" aria-label="Diferenciais da Foto Libra">
+    <div class="wrap trust-inner">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2" stroke-linecap="round"/></svg>
+        Foto 3x4 pronta na hora
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Tradição no bairro do Tatuapé
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="1.5"/><path d="M3 9h18M8 3v3M16 3v3" stroke-linecap="round"/></svg>
+        Serviços rápidos de segunda a sexta
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 6h14v12H5z"/><path d="M9 10h6M9 14h4" stroke-linecap="round"/></svg>
+        Papelaria para o dia a dia
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="servicos">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>O que a Foto Libra resolve para você</h2>
+        <p class="note">Seis frentes de atendimento para resolver foto, documentos e necessidades rápidas do dia a dia.</p>
+      </div>
+
+      <div class="services-grid">
+        <article class="card" data-code="01">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="7" width="19" height="13" rx="1.5"/><path d="M8 7l1.5-3h5L16 7"/><circle cx="12" cy="13.5" r="3.5"/></svg>
+          </div>
+          <h3>Foto 3x4 para documento</h3>
+          <p>Foto para RG, CNH, passaporte, concursos e currículos, com enquadramento certo e atendimento rápido para você sair com tudo pronto.</p>
+          <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Gostaria de tirar minha foto 3x4 na Foto Libra.">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
+            Pedir no WhatsApp
+          </a>
+        </article>
+
+        <article class="card" data-code="02">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="14" height="14" rx="1"/><rect x="7" y="8" width="14" height="14" rx="1" fill="var(--paper)"/><circle cx="14" cy="15" r="2.4"/></svg>
+          </div>
+          <h3>Revelação e impressão de fotos</h3>
+          <p>Envie as imagens do celular ou da câmera e retire suas fotos impressas em papel fotográfico, prontas para álbum, porta-retrato ou presente.</p>
+          <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Quero revelar ou imprimir minhas fotos na Foto Libra.">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
+            Pedir no WhatsApp
+          </a>
+        </article>
+
+        <article class="card" data-code="03">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 9V3h12v6"/><rect x="3" y="9" width="18" height="8" rx="1"/><path d="M6 17v4h12v-4"/></svg>
+          </div>
+          <h3>Impressão de documentos</h3>
+          <p>Provas, contratos, apostilas, currículos e arquivos em PDF ou Word impressos com praticidade para resolver tudo sem complicação.</p>
+          <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Preciso imprimir alguns documentos na Foto Libra.">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
+            Pedir no WhatsApp
+          </a>
+        </article>
+
+        <article class="card" data-code="04">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="4" y="3" width="16" height="18" rx="1.5"/><path d="M4 3l16 18M20 3L4 21" stroke-opacity="0.35"/></svg>
+          </div>
+          <h3>Plastificação</h3>
+          <p>Proteja certificados, cardápios, crachás, documentos e materiais importantes contra água, desgaste e o uso do dia a dia.</p>
+          <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Quero plastificar um documento na Foto Libra, podem me orientar?">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
+            Pedir no WhatsApp
+          </a>
+        </article>
+
+        <article class="card" data-code="05">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="3" width="13" height="18" rx="1"/><path d="M4 5v2M4 9v2M4 13v2M4 17v2" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Encadernação</h3>
+          <p>TCC, apostilas, relatórios e materiais de estudo com acabamento caprichado, ideais para apresentação, entrega e organização.</p>
+          <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Preciso encadernar um material e gostaria de mais informações.">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
+            Pedir no WhatsApp
+          </a>
+        </article>
+
+        <article class="card" data-code="06">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M7 5h10v14H7z"/><path d="M10 3v4M14 3v4M9.5 11h5M9.5 15h5" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Papelaria e utilidades</h3>
+          <p>Você encontra itens de papelaria para completar a correria do dia, como envelopes, pastas, folhas, canetas e pequenos materiais de apoio.</p>
+          <a href="#" class="btn btn-wa btn-sm wa-btn" data-msg="Olá! Gostaria de saber quais itens de papelaria vocês têm disponíveis.">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
+            Pedir no WhatsApp
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="about section" id="quem-somos">
+    <div class="wrap about-grid">
+      <div class="about-copy">
+        <div class="section-head" style="margin-bottom:22px;">
+          <h2>Quem somos</h2>
+          <p class="note">Uma casa tradicional do bairro, conhecida por atendimento rápido e confiança.</p>
+        </div>
+        <p>O Foto Libra, localizado na Rua Emília Marengo, é um dos comércios mais tradicionais e queridos do Tatuapé. Fundado na década de 1970, por volta de 1972, o estúdio se tornou uma referência clássica no bairro para revelação de filmes, fotos 3x4 e serviços rápidos.</p>
+        <p>Hoje, a loja segue sendo lembrada justamente por unir tradição, praticidade e atendimento próximo, resolvendo desde fotos para documentos até impressões, plastificação, encadernação e itens de papelaria no mesmo lugar.</p>
+      </div>
+      <div class="about-points" aria-label="Destaques da Foto Libra">
+        <div class="about-box">
+          <strong>Desde 1972</strong>
+          <span>História construída ao longo de décadas atendendo moradores, famílias e estudantes da região.</span>
+        </div>
+        <div class="about-box">
+          <strong>Tatuapé</strong>
+          <span>Presença local forte na Rua Emília Marengo, em um ponto conhecido e de fácil acesso no bairro.</span>
+        </div>
+        <div class="about-box">
+          <strong>Resolve rápido</strong>
+          <span>Foto 3x4, documentos, acabamento e papelaria com um atendimento objetivo, prático e humano.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="como-funciona" style="padding-top:0;">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Como funciona</h2>
+        <p class="note">Do primeiro contato até a retirada, sem burocracia.</p>
+      </div>
+      <div class="process-list">
+        <div class="process-item">
+          <span class="process-num">01 — CHAME</span>
+          <h3>Fale com a loja</h3>
+          <p>Entre em contato pelo WhatsApp e diga se precisa de foto 3x4, impressão, plastificação, encadernação ou papelaria.</p>
+        </div>
+        <div class="process-item">
+          <span class="process-num">02 — ENVIE OU PASSE AQUI</span>
+          <h3>Envie o arquivo ou vá até a loja</h3>
+          <p>Mande o PDF, a foto ou a dúvida pelo WhatsApp, ou passe na loja para ser atendido pessoalmente.</p>
+        </div>
+        <div class="process-item">
+          <span class="process-num">03 — RETIRE</span>
+          <h3>Receba tudo pronto</h3>
+          <p>Você combina o melhor horário e retira seu material já finalizado na Rua Emília Marengo, no Tatuapé.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="location" id="local">
+    <div class="wrap section">
+      <div class="location-inner">
+        <div>
+          <h2>Onde estamos</h2>
+          <div class="loc-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-7.5 7-12a7 7 0 1 0-14 0c0 4.5 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            <div>
+              <span class="loc-label">Endereço</span>
+              Rua Emília Marengo, 34 — Tatuapé, São Paulo
+            </div>
+          </div>
+          <div class="loc-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/></svg>
+            <div>
+              <span class="loc-label">WhatsApp</span>
+              <a href="#" class="wa-btn" data-msg="Olá! Vim pelo site da Foto Libra e gostaria de mais informações.">(11) 2674-5297</a>
+            </div>
+          </div>
+          <div class="loc-line" style="border-bottom:none;align-items:flex-start;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="17" rx="1.5"/><path d="M3 9h18M8 3v3M16 3v3" stroke-linecap="round"/></svg>
+            <div style="width:100%;">
+              <span class="loc-label">Horário</span>
+              <table class="hours-table" aria-label="Horário de funcionamento">
+                <tr><td>Segunda a sexta</td><td>9h – 17h30</td></tr>
+                <tr><td>Sábado e domingo</td><td>Fechado</td></tr>
+              </table>
+            </div>
+          </div>
+          <a href="https://www.google.com/maps/search/?api=1&query=Rua+Em%C3%ADlia+Marengo%2C+34+-+Tatuap%C3%A9%2C+S%C3%A3o+Paulo" target="_blank" rel="noopener" class="btn btn-ghost btn-sm" style="margin-top:22px;">Abrir no Google Maps</a>
+        </div>
+
+        <div class="map-frame">
+          <iframe
+            src="https://www.google.com/maps?q=Rua+Em%C3%ADlia+Marengo%2C+34+-+Tatuap%C3%A9%2C+S%C3%A3o+Paulo&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa com a localização da Foto Libra">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="final-cta reg-frame">
+    <span class="reg-mark tl" aria-hidden="true" style="left:24px;top:24px;"></span>
+    <span class="reg-mark tr" aria-hidden="true" style="right:24px;top:24px;"></span>
+    <div class="wrap">
+      <p class="eyebrow" style="justify-content:center;">Foto Libra · Rua Emília Marengo</p>
+      <h2>Precisa resolver sua foto ou documento hoje?</h2>
+      <p>Chame a Foto Libra no WhatsApp para combinar atendimento, tirar dúvidas e deixar sua demanda encaminhada antes mesmo de chegar à loja.</p>
+      <a href="#" class="btn btn-wa wa-btn" data-msg="Olá! Vim pelo site da Foto Libra e gostaria de mais informações.">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 20l1.4-4.1A8 8 0 1 1 9 18.6L4 20Z"/><path d="M8.5 9.5c.3 2.6 2.4 4.7 5 5" stroke-linecap="round"/></svg>
+        Chamar no WhatsApp agora
+      </a>
+    </div>
+  </section>
+</main>
 
 <footer>
   <div class="wrap">
     <div class="footer-inner">
       <div class="footer-brand">
         <span class="brand-mark">Foto Libra</span>
-        <p>Foto 3x4, revelação e impressão de fotos, impressão de documentos, plastificação e encadernação, no Tatuapé.</p>
+        <p>Foto 3x4, revelação e impressão de fotos, impressão de documentos, plastificação, encadernação e papelaria no Tatuapé.</p>
       </div>
       <div class="footer-col">
         <span class="loc-label">Endereço</span>
